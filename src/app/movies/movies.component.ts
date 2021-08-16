@@ -21,6 +21,7 @@ export class MoviesComponent implements OnInit {
 
   ngOnInit(): void {
     //test change
+    //test change 2
   }
 
   getMovies(): void {
