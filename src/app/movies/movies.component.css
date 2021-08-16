@@ -1,0 +1,48 @@
+button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 8px;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .next {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
+
+.search {
+    display: inline-block;
+    padding: 8px 8px;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width:fit-content;
+    list-style-type: none;
+}
+.movie-card {
+    border: thin black solid;
+    border-style: round;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(169, 155, 177);
+    width: 300px;
+}
+
+img {
+    width: 100%;
+}

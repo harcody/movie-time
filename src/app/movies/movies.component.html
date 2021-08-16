@@ -1,0 +1,24 @@
+<h1>{{title}}</h1>
+<div>
+    <section>
+        <h3>Search Movies:</h3>
+        <form (keydown.enter)=refreshMovies()>
+            <input class="search" name="queryString" [(ngModel)]="queryString" type="text" placeholder="Enter Title" size="25">
+            <button type="button" (click)="refreshMovies()">Submit</button>
+        </form>
+    </section>
+    <br/>
+</div>
+<div *ngFor="let movie of movies">
+    <div class="movie-card">
+        <h1>{{movie.Title}}</h1>
+        <div>
+            <img [src]="movie.Poster"/>
+        </div>
+        <h2>{{movie.Year}}</h2>
+        <p>{{movie.imdbID}}, {{movie.Type}}</p>
+    </div>
+    <br/>
+</div>
+<button *ngIf="page > 1" type="button" (click)="decrementPage()">&laquo; Previous</button>
+<button *ngIf="movies.length == 10" type="button" (click)="incrementPage()">Next &raquo;</button>
